@@ -17,7 +17,7 @@ document.querySelectorAll('.job').forEach(job => {
         const title = this.querySelector('h3').innerText; // Obtener el título del trabajo
         console.log(title); // Verificar el título obtenido
         modalTitle.innerText = title;
-        modalDescription.innerText = jobs[title]; // Acceder a la descripción usando el título
+        modalDescription.innerText = jobs[title] || "Descripción no disponible"; // Manejar caso de clave no encontrada
         modal.style.display = "block"; // Muestra la modal
     });
 });
