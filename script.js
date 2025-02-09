@@ -6,8 +6,8 @@ const closeModal = document.getElementsByClassName("close")[0];
 
 // Datos de los trabajos
 const jobs = {
-    "Software Engineer - Telefónica": "Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías como JavaScript, React y Node.js. Optimización de bases de datos SQL para mejorar el rendimiento de las consultas. Colaboración en equipos ágiles para la entrega de proyectos en tiempo y forma.",
-    "Software Engineer Intern - Banco Santander": "Desarrollo de scripts en Python para la automatización de procesos financieros. Análisis y visualización de datos utilizando herramientas como Pandas y Tableau. Soporte en la migración de sistemas legacy a soluciones cloud.",
+    "Software Engineer - Banco Santander": "Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías como JavaScript, React y Node.js. Optimización de bases de datos SQL para mejorar el rendimiento de las consultas. Colaboración en equipos ágiles para la entrega de proyectos en tiempo y forma.",
+    "Software Engineer - Telefónica": "Desarrollo de scripts en Python para la automatización de procesos financieros. Análisis y visualización de datos utilizando herramientas como Pandas y Tableau. Soporte en la migración de sistemas legacy a soluciones cloud.",
     "Software Engineer Intern - Moodle": "Contribución al desarrollo de plugins para la plataforma Moodle. Pruebas y depuración de código en PHP y JavaScript. Documentación técnica para desarrolladores."
 };
 
