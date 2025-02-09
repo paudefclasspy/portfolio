@@ -1,0 +1,236 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #00ff88;
+  }
+  
+  p {
+    font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+    line-height: 1.5; /* Mejorar la legibilidad */
+}
+
+h3 {
+    font-size: 2rem; /* Aumentar tamaño de fuente */
+    color: #00ff88; /* Color del título */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+}
+  
+  .main-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .main-nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .main-nav a:hover {
+    color: #00ff88;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #0d0d0d;
+    margin-top: auto;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #00ff88;
+  }
+  
+  /* Animaciones */
+  [data-aos] {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  [data-aos="fade-down"] {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  [data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  [data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+    transform: translate(0);
+  }
+  .btn {
+    display: inline-block;
+    background-color: #00cc70; /* Color de fondo más vibrante */
+    color: #ffffff; /* Color de texto blanco */
+    padding: 0.75rem 1.5rem; /* Mayor padding */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #00ff88; /* Color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+  
+.job {
+    background-color: #2a2a2a; /* Color de fondo más claro */
+    padding: 1.5rem; /* Mayor padding */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 1.5rem 0; /* Espaciado entre tarjetas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+}
+
+.job:hover {
+    background-color: #3a3a3a; /* Cambia el color de fondo al pasar el ratón */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+    cursor: pointer; /* Cambia el cursor a puntero */
+}
+
+.project-card {
+    background-color: #2a2a2a; /* Color de fondo más claro */
+    padding: 1.5rem;
+    border-radius: 15px; /* Bordes más redondeados */
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Transición suave */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    background-color: #3a3a3a; /* Cambia el color de fondo al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor a puntero */
+}
+  
+  .projects-grid {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+  }
+
+  h1 a {
+    color: #00ff88; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+h1 a:hover {
+    color: #00cc70; /* Color del texto al pasar el ratón */
+}
+
+#experience {
+    padding: 2rem; /* Espaciado adicional */
+    background-color: #1a1a1a; /* Fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para la ventana modal */
+/* Estilos para la ventana modal */
+.modal {
+    display: none; /* Oculta la modal por defecto */
+    position: fixed; /* Mantiene la modal en la misma posición */
+    z-index: 1000; /* Asegura que la modal esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilita el desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+}
+
+.modal-content {
+    background-color: #2a2a2a; /* Color de fondo de la modal */
+    margin: 15% auto; /* Margen superior y centrado */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #00ff88; /* Borde verde */
+    width: 80%; /* Ancho de la modal */
+    max-width: 600px; /* Ancho máximo */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #f4f4f4; /* Color del texto */
+}
+
+.close {
+    color: #aaa; /* Color del botón de cerrar */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+}
+
+.close:hover,
+.close:focus {
+    color: #00ff88; /* Color al pasar el ratón */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor */
+}
+
+.click-message {
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #ccc; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    margin: 1rem 0; /* Espaciado superior e inferior */
+    opacity: 0.8; /* Opacidad sutil */
+}
